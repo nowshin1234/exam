@@ -1,0 +1,63 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+}
+</script>
+
+</head>
+<body>
+
+
+	<fieldset>
+    <legend><b>REGISTRATION</b></legend>
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="POST">
+		<br/>
+		
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>Student Name</td>
+				<td>:</td>
+				<td><input name="fname" type="text"></td>
+				<td></td>
+			</tr>		
+			
+			<tr>
+				<td>UserName</td>
+				<td>:</td>
+				<td><input name="uname" type="text"></td>
+				<td></td>
+			</tr>	
+		
+		<tr>
+				<td>Student id</td>
+				<td>:</td>
+				<td><input name="id" type="text"></td>
+				<td></td>
+			</tr>	
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input name="Pword" type="password"></td>
+				<td></td>
+			</tr>	
+				
+				
+				
+					<td>
+						<button><name="" value="SignUp">Sign Up</button>
+						<a href type="Registration.html">Sign In</a>
+
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
